@@ -6,10 +6,16 @@
 <style>
   body {
     margin: 0;
-    background-image: url("anhpage/17b571eda621277f7e30.jpg");
-    background-repeat: repeat; /* Cho phép ảnh lặp lại */
-    background-size: auto; /* Giữ nguyên kích thước gốc, không kéo dãn */
-}
+    /* Phủ một lớp màu đen mờ 50% lên trên ảnh */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url("anhpage/17b571eda621277f7e30.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    /* Mẹo bổ sung: Tạo hiệu ứng mờ nhòe chủ đích (Optional) */
+    backdrop-filter: blur(5px); 
 }
   nav {background:#A6294B;padding:15px;text-align:center;}
   nav a {color: white;text-decoration:none;margin:0 20px;font-weight:bold;font-size:18px;}
